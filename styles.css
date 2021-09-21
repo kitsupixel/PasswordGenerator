@@ -1,0 +1,53 @@
+#random-password {
+    min-width: 200px;
+    padding: 10px;
+}
+
+#password {
+    font-size: 0.7rem;
+}
+
+#copy {
+    background-image: url("/images/copy.png");
+    background-size: 13px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 27px
+}
+
+#settings {
+    margin: 10px 0px;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 0.7rem;
+    border-radius: 5px;
+}
+
+#length {
+    width: 80px;
+    display: inline-block;
+    font-size: 0.7rem;
+    padding: 0 5px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.checkbox {
+    margin-top: 7px;
+}
+
+.checkbox input {
+    position: relative;
+    top: 3px;
+}
+
+#generate {
+    width: 100%;
+}
+
+#alert .alert {
+    font-size: 0.65rem;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}

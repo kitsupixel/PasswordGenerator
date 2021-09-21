@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="random-password">
+        <div class="input-group input-group-sm mb-3">
+            <input type="text" id="password" class="form-control form-control-sm">
+            <span class="input-group-text btn btn-primary" id="copy" title="Copy Password"></span>
+        </div>
+        <div id="settings">
+            <label class="checkbox" for="alpha-lower">
+                <input type="checkbox" id="alpha-lower" checked /> Lowercase letters
+            </label>
+            <label class="checkbox" for="alpha-upper">
+                <input type="checkbox" id="alpha-upper" checked /> Uppercase letters
+            </label>
+            <label class="checkbox" for="numbers">
+                <input type="checkbox" id="numbers" checked /> Include Numbers
+            </label>
+            <label class="checkbox" for="symbols">
+                <input type="checkbox" id="symbols" checked /> Include Symbols
+            </label>
+            <br />
+            <label for="length">Length</label>
+            <input type="number" class="form-control form-control-sm" id="length" value="16" min="8" max="64" />
+        </div>
+        <div id="alert" style="display: none;">
+            <div class="alert alert-danger" role="alert">
+                You need to check at least one box
+            </div>
+        </div>
+        <button class="btn btn-sm btn-primary" id="generate">Generate</button>
+    </div>
+
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
